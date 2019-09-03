@@ -30,7 +30,7 @@ def letterArray(letters):
         print(word)
 
 array = ["l", "e", "n", "n", "y"]
-letterArray(letters)
+letterArray(array)
 
 def max_van_3(r, b, g):
     if (r > b):
@@ -44,3 +44,29 @@ def max_van_3(r, b, g):
             return g
 
 print(max_van_3(420, 66, 69))
+
+def reverse_string(string):
+    stringList = []
+    counter = len(string)
+    for i in range(len(string)):
+        counter = counter - 1
+        stringList.append(string[counter])
+    newString = ''.join(stringList)
+    return newString
+
+print(reverse_string("etaneS eht ma I"))
+
+
+'''
+def is_priemgetal(num):
+    if num > 1:
+        for i in range(2,num):
+            if (num % i) == 0:
+                return False
+            else:
+                return True
+    else:
+        return False
+    
+print(is_priemgetal(9))
+'''

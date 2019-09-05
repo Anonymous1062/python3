@@ -57,16 +57,33 @@ def reverse_string(string):
 print(reverse_string("etaneS eht ma I"))
 
 
-'''
-def is_priemgetal(num):
+def checkprime(num):
+    
     if num > 1:
-        for i in range(2,num):
-            if (num % i) == 0:
-                return False
-            else:
-                return True
+       for i in range(2,num):
+           if (num % i) == 0:
+               return False
+       else:
+           return True
+       
+
     else:
         return False
-    
-print(is_priemgetal(9))
-'''
+
+
+print(checkprime(9))
+
+def palindrome(string):
+    stringList = []
+    counter = len(string)
+    for i in range(len(string)):
+        counter = counter - 1
+        stringList.append(string[counter])
+    newString = ''.join(stringList)
+    if newString == string:
+        return True
+    else:
+        return False
+
+print(palindrome("tacocat"))
+

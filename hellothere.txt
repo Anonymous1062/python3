@@ -1,2 +1,2 @@
-Sheev Palpatine=the Senate
-Obi-Wan Kenobi=Jesus
+Hello there!=General Kenobi
+only=a sith deals in absolutes

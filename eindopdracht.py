@@ -1,3 +1,4 @@
+menucheck = True
 def readfile():
     with open('hellothere.txt') as f:
       bestandsdata = f.read().split('\n')
@@ -35,20 +36,22 @@ If you want to stop the program, say cancel\n''')
     choice = input("Pick one of the options: ")
     if choice == "read":
         print(readfile())
-        menu()
+        return True
     elif choice == "write":
         addkey = input("What will the new key be? ")
         addvalue = input("What will the new value be? ")
         addtofile(addkey, addvalue)
         print("Adding to file complete")
-        menu()
+        return True
     elif choice == "remove":
         delkey = input("Which key do you want to remove from the file? ")
         print(removefromfile(delkey))
-        menu()
+        return True
     elif choice == "cancel":
         print("Program terminated")
+        return False
     else:
-        menu()
+        return True
 print("Hello there!")
-menu()
+while menucheck == True:
+    menucheck = menu()

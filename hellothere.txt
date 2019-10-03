@@ -1,2 +1,1 @@
 Hello there!=General Kenobi
-only=a sith deals in absolutes
